@@ -1,0 +1,1 @@
+Redesign von Georg Kaser auf Basis des REDAXO Default-Themes von Ralph Zumkeller und Thomas Blum. 
