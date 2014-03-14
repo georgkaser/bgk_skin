@@ -488,6 +488,8 @@ div#rex-navi-logout ul li, div#rex-navi-main ul li {
 body {
 	margin-top: 0;
 	position: relative;
+	height: 100%;
+	overflow: hidden;
 }
 body#rex-page-mediapool #rex-navi-main,
 body#rex-page-login #rex-navi-main {
@@ -531,14 +533,19 @@ div#rex-navi-main {
 }
 html > body div#rex-navi-main {
     background: #F6F6F6;
-    padding-bottom: 20px;
+    position: absolute;
+    /* padding-bottom: 20px; */
+    bottom: 0px;
+    top: 50px;
+    overflow: hidden;
+    width: 200px;
 }
 
 div#rex-wrapper {
 	/* clear: none; */
-	float: none;
+	/* float: none; */
 	width: auto;
-	padding: 1%;
+	/* padding: 1%; */
 	background: #fff;
 	/* min-height: 600px; */
 	margin-left: 200px;
@@ -547,8 +554,12 @@ div#rex-wrapper {
 	/* overflow: hidden; */
 }
 div#rex-wrapper2 {
-	width: 100%;
+	width: 97%;
 	float: left;
+	height: 97%;
+	overflow-y: auto;
+	padding: 14px 1.5% 0px 1.5%;
+	margin-bottom: 65px;
 }
 #rex-page-login div#rex-wrapper {
 	padding: 40px 0px;
@@ -577,6 +588,7 @@ div#rex-navi-footer ul {
 }
 div#rex-navi-footer p#rex-scripttime {
     margin-right: 15px;
+    float: left;
 }
 
 
@@ -697,7 +709,10 @@ div.rex-form div.rex-form-row p.rex-form-text input, div.rex-form div.rex-form-r
 /*	Navigationen ***************************************************************
 *******************************************************************************/
 div#rex-navi-main dl {
-	width: 100%;
+	width: 200px;
+	overflow: auto;
+	height: 100%;
+	padding-right: 20px;
 }
 div#rex-navi-main dt {
 	clear: both;
@@ -708,6 +723,7 @@ div#rex-navi-main dt {
 div#rex-navi-main dd {
 	margin: 8;
 	padding: 0;
+	width: 200px;
 }
 div#rex-navi-main ul li  {
 	display: block;
@@ -1363,7 +1379,7 @@ body.rex-popup #rex-extra {
 div#rex-navi-main dl dt {
 	display: block !important;
 	position: static !important;
-	width: auto !important;
+	width: 160px !important;
 	height: auto !important;
 	background-color: transparent !important;
 }
@@ -1391,6 +1407,11 @@ div#rex-header {
 body div#rex-website {
   width: 100%;
   bottom: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background: blue;
+  height: 100%;
 }
 body div#rex-navi-logout {
   float: none;
@@ -1400,13 +1421,19 @@ body div#rex-navi-logout {
 }
 
 body div#rex-wrapper {
-  float: none;
-  margin-left: 200px;
+  /* float: left; */
+  left: 0px;
   /* margin-right: 16px; */
   width: auto;
   margin-top: 50px;
   /* bottom: 0px; */
   /* margin-bottom: 20px; */
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  padding-bottom: 35px;
+  overflow: hidden;
 }
 body.rex-layout-liquid div#rex-wrapper2 {
   width: 100%;
@@ -1489,17 +1516,21 @@ div#rex-navi-main dt {
 }
 
 div#rex-footer {
-  padding: 1% 0 2% 0;
-  width: 100%;
+  /* padding: 1% 0 2% 0; */
+  /* width: 100%; */
   background: #fff;
  
   font-size: 11px;
   /* font-style: italic; */
+  position: absolute;
+  bottom: 0px;
+  left: 200px;
+  height: 3%;
 }
 div#rex-navi-footer ul {
     float: left;
 	
-    margin-left: 215px;
+    /* margin-left: 215px; */
 	width: auto;
 }
 body#rex-page-login div#rex-navi-footer {
