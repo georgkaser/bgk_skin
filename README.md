@@ -3,7 +3,7 @@ Alternatives REDAXO Backend Theme
 
 ![Screenshot](https://raw.github.com/georgkaser/bgk_skin/master/bgk_skin-screenshot.png)
 
-Das bgk_skin ist ein Plugin des be_style Addons. Es kann alternativ zum agk_skin installiert werden, nicht aber gemeinsam.
+Das bgk_skin ist ein Plugin des be_style Addons. Es kann alternativ zum agk_skin installiert werden, nicht aber gemeinsam. Es funktioniert ab REDAXO Version 4, nicht aber in Version 5.
 
 ## Installation
 
