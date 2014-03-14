@@ -135,8 +135,9 @@ div.rex-form-content-editmode-edit-slice div.rex-form-row p input.rex-form-submi
 /*	Blau - Dunkel */
 div#rex-navi-main ul li a:hover, 
 div#rex-navi-main ul li a.rex-active,
-div#rex-navi-main ul li a.rex-active:hover {
-    background: #E6E6E6;
+div#rex-navi-main ul li a.rex-active:hover,
+div#rex-navi-main ul li ul.rex-navi-level-2 li a.rex-active:hover {
+    background-color: #E6E6E6;
 }
 div#rex-navi-main ul li a:hover {
 	background-image: none;
