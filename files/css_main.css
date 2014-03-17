@@ -559,6 +559,7 @@ div#rex-wrapper2 {
 	height: 97%;
 	overflow-y: auto;
 	padding: 14px 1.5% 0px 1.5%;
+	/* margin-bottom: 65px; */
 }
 #rex-page-login div#rex-wrapper {
 	padding: 40px 0px;
@@ -658,6 +659,13 @@ div.rex-form div.rex-form-row {
     padding: 1%;
     border: 0px;
     width: 98%;
+    position: relative;
+}
+div.rex-form-row p.rex-form-label-right input.rex-form-checkbox, 
+div.rex-form-row p.rex-form-label-right input.rex-form-radio, 
+div.rex-message p.rex-form-label-right input.rex-form-checkbox, 
+div.rex-message p.rex-form-label-right input.rex-form-radio {
+	margin: 0 5px 0 155px;
 }
 div.rex-area-col-b div.rex-form-row {
 	padding: 1% 0%;	
@@ -688,9 +696,12 @@ div#rex-form-system-setup fieldset.rex-form-col-1 div.rex-form-row p input.rex-f
 }
 
 div.rex-form .CodeMirror {
-    width: 85% !important;
+    width: 80% !important;
     height: 600px !important;
 	
+    clear: both;
+    margin: 0px;
+    padding: 0;
 }
 .rex-form .CodeMirror pre,
 .rex-form .CodeMirror-linenumber {
@@ -709,9 +720,10 @@ div.rex-form div.rex-form-row p.rex-form-text input, div.rex-form div.rex-form-r
 *******************************************************************************/
 div#rex-navi-main dl {
 	width: 200px;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	height: 100%;
-	padding-right: 20px;
+	/* padding-right: 20px; */
 }
 div#rex-navi-main dt {
 	clear: both;
@@ -1290,6 +1302,7 @@ div.rex-form input.rex-form-submit,
 input.submit,
 p.rex-button a {
 	border: 0;
+	position: relative;
 }
 
 body div.rex-form table.rex-table, 
