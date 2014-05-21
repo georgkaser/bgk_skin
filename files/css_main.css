@@ -944,11 +944,11 @@ body#rex-page-structure .rex-offline {
 .rex-i-clang-add {							background-position: -394px -348px; }
 .rex-i-cronjob {							background-position: -593px -561px; }
 .rex-i-cronjob-add {						background-position: -394px -348px; }
-.rex-i-generic {							background-position: -294px -348px; }
-.rex-i-generic-add {						background-position: -394px -348px; }
-.rex-i-generic-delete {}
-.rex-i-generic-close {}
-.rex-i-generic-open {}
+//.rex-i-generic {							background-position: -294px -348px; }
+//.rex-i-generic-add {						background-position: -394px -348px; }
+//.rex-i-generic-delete {}
+//.rex-i-generic-close {}
+//.rex-i-generic-open {}
 .rex-i-list {}
 .rex-i-media-add {							background-position: -394px -348px; }
 .rex-i-media {}
