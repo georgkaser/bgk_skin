@@ -1580,3 +1580,6 @@ table.rex-table th.rex-icon,
 table.rex-table td.rex-icon {
 	padding-top: 8px;	
 }
+select {
+	overflow: scroll !important;
+}
