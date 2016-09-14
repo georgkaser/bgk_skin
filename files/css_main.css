@@ -1583,3 +1583,12 @@ table.rex-table td.rex-icon {
 select {
 	overflow: scroll !important;
 }
+#rex-xform p .cke { /* xform */
+    display: inline-block !important;
+	float: left !important;
+    width: 50% !important;
+}
+div.rex-form .CodeMirror.CodeMirror-fullscreen {
+	width: 100% !important;
+	height: 100% !important;
+}
