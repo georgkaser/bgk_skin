@@ -1,0 +1,1594 @@
+/**
+ * CSS Datei des Backends
+ * @package redaxo4
+ * @version svn:$Id$
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+div.rex-widget img {
+	vertical-align: top;
+}
+
+/*	Textfarben *****************************************************************
+*******************************************************************************/
+/*	Weiss */
+div#rex-navi-logout, 
+div#rex-navi-main ul li a.rex-active {
+	color: #000;
+	font-weight: 600;
+}
+
+a.rex-button {
+  color: #000;
+}
+
+/*	Cyan */
+a, div#rex-navi-logout a,
+div#rex-navi-footer, 
+div#rex-navi-footer ul li, 
+div#rex-navi-footer ul li a, 
+div.rex-content-header ul li a {
+	color: #006298;
+	line-height: 17px;
+}
+div#rex-navi-footer, div#rex-navi-footer a {
+	/* color: #C7C7C7 !important; */
+}
+/*	Blau - Dunkel */
+div#rex-title h1, 
+div#rex-navi-page ul li a.rex-active, 
+div.rex-navi-paginate ul li.rex-navi-paginate-page a.rex-active, 
+div#rex-clang ul li a.rex-active, 
+div.rex-content-header ul li a.rex-active {
+	color: #006298;
+	font-weight: 600;
+}
+
+
+/*	Gruen */
+.rex-tx3 {
+	/* color: #79AD4A; */
+}
+
+
+/*	Rot */
+.rex-tx2 {
+	color: #AA0000;
+}
+
+
+/*	Schriftarten ***************************************************************
+*******************************************************************************/
+body, 
+input, 
+textarea, 
+select, 
+div.rex-navi-paginate ul li.rex-navi-paginate-page a span {
+	font-family: "Open Sans", "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Arial,sans-serif;
+}
+
+
+/*	Schriftgroessen ************************************************************
+*******************************************************************************/
+div#rex-website {
+	font-size: 12px;
+}
+div#rex-title h1 {
+	font-size: 20px;
+}
+
+.rex-hl2, 
+div#rex-navi-main dt {
+	font-size: 1.333em;
+}
+
+div.rex-navi-paginate ul li.rex-navi-paginate-page a span {
+	font-size: 1em;
+}
+
+/*	Zeilenhoehen ***************************************************************
+*******************************************************************************/
+div#rex-title h1 {
+	line-height: 1.1;
+	font-weight: normal;
+}
+
+.rex-popupmediapool td p.rex-tx1 {
+  line-height: 1.4;
+}
+
+/*	Background Color ***********************************************************
+*******************************************************************************/
+
+div#rex-navi-path {
+	background-color: transparent;
+}
+
+body {
+	background-color: #fff;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+}
+
+/*	Blau - Hell */
+div#rex-navi-main dd {
+    margin-bottom: 10px;
+}
+div.rex-content-editmode div.rex-form-content-editmode-edit-slice {
+	background-color: #EDEDED;
+}
+div.rex-content-editmode-slice-input {
+	padding: 0px;
+} 
+div.rex-content-editmode-slice-output {
+	clear: both;
+	padding: 5px;
+} 
+
+div.rex-form-content-editmode-add-slice div.rex-form-row p input.rex-form-submit, 
+div.rex-form-content-editmode-edit-slice div.rex-form-row p input.rex-form-submit {
+	margin-left: 0px;
+}
+/*	Blau - Dunkel */
+div#rex-navi-main ul li a:hover, 
+div#rex-navi-main ul li a.rex-active,
+div#rex-navi-main ul li a.rex-active:hover,
+div#rex-navi-main ul li ul.rex-navi-level-2 li a.rex-active:hover {
+    background-color: #E6E6E6;
+}
+div#rex-navi-main ul li a:hover {
+	background-image: none;
+}
+
+div#rex-navi-main ul li ul.rex-navi-level-2 li a.rex-active,
+#rex-title .rex-navi ul li a {
+    background-color: transparent;
+	color: #666;
+    font-weight: 600;
+}
+
+/*	Blau - Dunkel */
+div#rex-navi-main ul li ul li a {
+
+}
+
+div.rex-toolbar, 
+div.rex-content-block, 
+div.rex-content-header, 
+.rex-hl2, 
+div.rex-form, 
+div.rex-area-footer, 
+div.rex-addon-footer, 
+table.rex-table th, 
+table.rex-table tr td.rex-colored, 
+table.rex-table tr.rex-table-row-activ td {
+	background-color: #EEE;
+}
+
+div#rex-footer,
+div#rex-header p.rex-header-top,
+div#rex-title,
+div#rex-linkmap, 
+div#rex-form-system-setup,
+div#rex-mediapool-detail-wrapper, 
+div.rex-area, 
+div.rex-addon-output, 
+div.rex-content-cols, 
+div.rex-form div.rex-form-wrapper,
+div.rex-widget p.rex-widget-field input,
+div.rex-widget p.rex-widget-field select, 
+table.rex-table {
+	background-color: #f9f9f9;
+	overflow: hidden;
+	/* padding-bottom: 2%; */
+	/* border-bottom: 1px solid #fff; */
+}
+
+
+/*  Gruen - Add-, EditSlice *********/
+/*  Slice Inhalt */
+div.rex-content-editmode div.rex-form.rex-form-content-editmode-add-slice, 
+div.rex-content-editmode div.rex-form.rex-form-content-editmode-edit-slice, 
+table.rex-table tr.rex-metainfo-cat td {
+  background-color: #FDFCF4;
+}
+
+/*  Modulname, SliceNavi */
+div.rex-content-editmode div.rex-form.rex-form-content-editmode-add-slice div.rex-content-editmode-module-name, 
+div.rex-content-editmode div.rex-content-editmode-module-name.rex-form-content-editmode-edit-slice, 
+div.rex-content-editmode div.rex-form-content-editmode-edit-slice div.rex-navi-slice, 
+table.rex-table tr.rex-metainfo-cat-b td {
+  background-color: #F6F6F6;
+}
+
+
+
+
+/*	Background Image ***********************************************************
+*******************************************************************************/
+div.rex-content-header, 
+div.rex-navi-paginate ul li.rex-navi-paginate-prev, 
+div.rex-navi-paginate ul li.rex-navi-paginate-message, 
+div.rex-navi-paginate ul li.rex-navi-paginate-page a, 
+div.rex-navi-paginate ul li.rex-navi-paginate-page a span {
+	background-image: none;
+}
+div#rex-footer {
+    /* border-top: 1px solid #e6e6e6; */
+    /* background: #fff; */
+}
+div#rex-navi-logout {
+	background-image: url(logo.gif);
+    background-position: 8px 0px;
+}
+p.rex-button a,
+input[type="submit"]
+input.submit,
+div.rex-form input.rex-form-submit {
+	background: #006298 !important;
+	color: #fff;
+}
+p.rex-button a:hover, 
+input.submit:hover,
+div.rex-form input.rex-form-submit:hover {
+	background: #007BBE !important;
+}
+p.rex-button a:active, 
+input.submit:active,
+div.rex-form input.rex-form-submit:active {
+	background: #008EDD !important;
+}
+
+div#rex-navi-main ul li ul li a,
+div#rex-navi-main ul li ul li a:hover,
+div#rex-navi-main ul li ul li a.rex-active {
+	background-image: url(navi_sub.gif);
+	background-repeat: no-repeat;
+	background-position: 21px 10px;
+}
+
+/*	Button - Pfeil oben */
+div.rex-navi-slice ul li a.rex-slice-move-up {
+	background-image: url(up.gif);
+}
+
+/*	Button - Pfeil unten */ 
+div.rex-navi-slice ul li a.rex-slice-move-down {
+	background-image: url(down.gif);
+}
+
+/*	Button - Pfeil links */ 
+div.rex-navi-paginate ul li.rex-navi-paginate-prev a {
+	background-image: url(left.gif);
+}
+
+/*	Button - Pfeil rechts */ 
+div.rex-navi-paginate ul li.rex-navi-paginate-next a {
+	background-image: url(right.gif);
+}
+
+div.rex-widget p.rex-widget-icons a.rex-icon-file-add {
+	background-image: url(file_add.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-add-inactive {
+	background-image: url(file_add_inactive.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-bottom {
+	background-image: url(file_bottom.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-delete {
+	background-image: url(file_del.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-delete-inactive {
+	background-image: url(file_del_inactive.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-down {
+	background-image: url(file_down.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-open {
+	background-image: url(file_open.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-open-inactive {
+	background-image: url(file_open_inactive.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-top {
+	background-image: url(file_top.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-up {
+	background-image: url(file_up.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-view {
+	background-image: url(file_view.gif);
+}
+div.rex-widget p.rex-widget-icons a.rex-icon-file-view-inactive {
+	background-image: url(file_view_inactive.gif);
+}
+
+
+/*	Trenner - Grau */ 
+div.rex-navi-paginate ul li, 
+div.rex-navi-slice ul li a.rex-tx3 {
+	background-image: url(pipe_grey.gif);
+	background-position: 0px 3px;
+}
+div#rex-navi-logout ul li, 
+div#rex-navi-main ul li {
+	background-position: 0px 3px;
+}
+div.rex-navi-slice ul li a.rex-tx3 {
+	background-position: 100% 2px;
+}
+
+/*	Popup */ 
+div#rex-navi-main ul li a.rex-popup {
+}
+
+/*	Back */ 
+a.rex-back {
+  padding-left: 8px;
+	background-image: url(back.gif);
+	background-position: 0 4px;
+}
+
+
+
+
+
+/*  Kategorietabelle Metainfo Button */
+div#rex-form-structure-category p.rex-button-add {
+  margin-top: 2px;
+}
+div#rex-form-structure-category p.rex-button-add a {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}
+
+
+.rex-i-action {
+	background-image: url(action.gif);
+}
+.rex-i-action-add {
+	background-image: url(action_plus.gif);
+}
+.rex-i-addon {
+	background-image: url(addon.gif);
+}
+.rex-i-article {
+	background-image: url(document.gif);
+}
+.rex-i-article-add {
+	background-image: url(document_plus.gif);
+}
+.rex-i-article-startpage {
+	background-image: url(startpage.gif);
+}
+.rex-i-clang {
+	background-image: url(clang.gif);
+}
+.rex-i-clang-add {
+	background-image: url(clang_plus.gif);
+}
+.rex-i-cronjob {
+	background-image: url(cronjob.gif);
+}
+.rex-i-cronjob-add {
+	background-image: url(cronjob_add.gif);
+}
+.rex-i-generic {
+	background-image: url(generic.gif);
+}
+.rex-i-generic-add {
+	background-image: url(generic_add.gif);
+}
+.rex-i-generic-delete {
+	background-image: url(generic_del.gif);
+}
+.rex-i-generic-close {
+	background-image: url(generic_close.gif);
+}
+.rex-i-generic-open {
+	background-image: url(generic_open.gif);
+}
+.rex-i-list {
+	background-image: url(list.gif);
+}
+.rex-i-media-add {
+	background-image: url(media_add.gif);
+}
+.rex-i-media {
+	background-image: url(media.gif);
+}
+.rex-i-metainfo {
+	background-image: url(metainfo.gif);
+}
+.rex-i-metainfo-add {
+	background-image: url(metainfo_plus.gif);
+}
+.rex-i-module {
+	background-image: url(module.gif);
+}
+.rex-i-module-add {
+	background-image: url(module_plus.gif);
+}
+.rex-i-refresh {
+	background-image: url(refresh.gif);
+}
+.rex-i-refresh-ani {
+	background-image: url(refresh_ani.gif);
+}
+.rex-i-refresh-err {
+  background-image: url(refresh_err.gif);
+}
+.rex-i-slice {
+	background-image: url(slice.gif);
+}
+.rex-i-template {
+	background-image: url(template.gif);
+}
+.rex-i-template-add {
+	background-image: url(template_plus.gif);
+}
+.rex-i-togglesettings {
+ 	background-image: url(togglesettings.gif);
+}
+.rex-i-togglesettings-off {
+ 	background-image: url(togglesettings_off.gif);
+}
+.rex-i-toggleview {
+ 	background-image: url(toggleview.gif);
+}
+.rex-i-toggleview-off {
+ 	background-image: url(toggleview_off.gif);
+}
+.rex-i-user {
+	background-image: url(user.gif);
+}
+.rex-i-user-add {
+	background-image: url(user_plus.gif);
+}
+
+.rex-i-category, 
+.rex-i-mediapool-category {
+	background-image: url(folder.png);
+}
+.rex-i-category-add, 
+.rex-i-mediapool-category-add {
+	background-image: url(folder_plus.gif);
+}
+
+/*	Border *********************************************************************
+*******************************************************************************/
+table.rex-table tr.rex-metainfo-cat td {
+  border-bottom-color: #DFE9E9;
+}
+div.rex-content-editmode div.rex-form.rex-form-content-editmode-add-slice div.rex-content-editmode-module-name, 
+div.rex-content-editmode div.rex-content-editmode-module-name.rex-form-content-editmode-edit-slice, 
+table.rex-table tr.rex-metainfo-cat-b td {
+  border-bottom: 1px solid #CBCBCB;
+}
+
+
+/*	Allgemeines ****************************************************************
+*******************************************************************************/
+.rex-hl2 {
+	font-weight: normal;
+	background-color: transparent;
+	font-size: 20px;
+}
+div#rex-navi-logout ul li, div#rex-navi-main ul li {
+    font-weight: 600;
+}
+
+/*	Seitenstruktur *************************************************************
+*******************************************************************************/
+body {
+	margin-top: 0;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+body#rex-page-mediapool #rex-navi-main,
+body#rex-page-login #rex-navi-main {
+    display: none;
+}
+div#rex-website {
+	float: left;
+	/* background-color: #f6f6f6; */
+	width: 100%;
+}
+
+div#rex-navi-logout {
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background: #006298;
+}
+div#rex-navi-logout p, 
+div#rex-navi-logout ul,
+div#rex-navi-logout ul li a {
+	text-align: right;
+	color: #fff;
+}
+div#rex-navi-logout ul {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+}
+
+div#rex-navi-main {
+	/* float: left; */
+	position: fixed;
+	width: 200px;
+	padding: 0;
+	background: none;
+	z-index: 110;
+	bottom: 0px;
+	top: 50px;
+	overflow-y: auto;
+}
+html > body div#rex-navi-main {
+    background: #F6F6F6;
+    position: absolute;
+    /* padding-bottom: 20px; */
+    bottom: 0px;
+    top: 50px;
+    overflow: hidden;
+    width: 200px;
+}
+
+div#rex-wrapper {
+	/* clear: none; */
+	/* float: none; */
+	width: auto;
+	/* padding: 1%; */
+	background: #fff;
+	/* min-height: 600px; */
+	margin-left: 200px;
+	/* padding-left: 200px; */
+	/* position: absolute; */
+	/* overflow: hidden; */
+}
+div#rex-wrapper2 {
+	width: 97%;
+	float: left;
+	height: 97%;
+	overflow-y: auto;
+	padding: 14px 1.5% 0px 1.5%;
+	/* margin-bottom: 65px; */
+}
+#rex-page-login div#rex-wrapper {
+	padding: 40px 0px;
+}
+body#rex-page-login div#rex-wrapper, 
+body#rex-page-linkmap div#rex-wrapper, 
+body#rex-page-mediapool div#rex-wrapper, 
+body#rex-page-setup div#rex-wrapper {
+	/* width: 100%; */
+	margin-right: 0px;
+}
+body#rex-page-login div#rex-wrapper2, 
+body#rex-page-linkmap div#rex-wrapper2, 
+body#rex-page-setup div#rex-wrapper2 {
+	padding: 0 16px;
+}
+
+div#rex-footer {
+    clear: both;
+    border: 0px;
+	margin: 0;
+	padding: 9px 0;
+}
+div#rex-navi-footer ul {
+    margin-left: 15px;
+}
+div#rex-navi-footer p#rex-scripttime {
+    margin-right: 15px;
+    float: left;
+}
+
+
+div#rex-title {
+	margin-top: 0px;
+	background: none;
+}
+html>body div#rex-title {
+	min-height: 0;
+}
+div#rex-title h1 {
+  padding-top: 6px;
+  padding-bottom: 13px;
+  padding-left: 0px;
+  border: 0px;
+  /* border-bottom: 1px solid #969696; */
+}
+div#rex-navi-page ul li a {
+    font-weight: normal;
+}
+div#rex-navi-page ul li a, 
+#rex-title .rex-navi ul li a,
+div#rex-clang ul li a,
+div.rex-content-header ul li a, 
+div#rex-navi-footer ul li {
+	background-position: 0px 3px;
+}
+.rex-popup div#rex-title h1 {
+  padding-top: 10px;
+  padding-bottom: 18px;
+  font-weight: normal;
+  
+}
+div#rex-output {
+	margin-top: 0px !important;
+	/* overflow: hidden; */
+}
+
+.rex-strike {
+	cursor: not-allowed;
+}
+
+div#rex-output table.rex-table tr:hover {
+    background: #F3F3F3;
+}
+#rex-page-login div#rex-title, 
+#rex-page-setup div#rex-title, 
+#rex-page-login div#rex-output, 
+#rex-page-setup div#rex-output {
+	float: none;
+	width: 450px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#rex-page-login input.rex-form-submit {
+    float: left;
+    clear: both;
+    background: rgb(0, 114, 191);
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	line-height: 27px;
+    height: 27px;
+    padding: 0px 15px;
+    margin: 20px 5px 5px 155px;
+}
+div.rex-form div.rex-form-row {
+    padding: 1%;
+    border: 0px;
+    width: 98%;
+    position: relative;
+}
+div.rex-form-row p.rex-form-label-right input.rex-form-checkbox, 
+div.rex-form-row p.rex-form-label-right input.rex-form-radio, 
+div.rex-message p.rex-form-label-right input.rex-form-checkbox, 
+div.rex-message p.rex-form-label-right input.rex-form-radio {
+	margin: 0 5px 0 155px;
+}
+div.rex-area-col-b div.rex-form-row {
+	padding: 1% 0%;	
+}
+
+#xform-modul #modulinfo {
+	font-size: 10px;
+	text-align: left !important;
+}
+div#rex-form-system-setup div.rex-form-row label {
+	width: 48%;
+	padding-left: 0;
+	font-weight: normal;
+}
+div.rex-area-col-b div.rex-form-row label {
+	padding-right: 0;	
+}
+div#rex-a256-searchbar form label {
+	margin: 5px;
+}
+div#rex-form-system-setup fieldset.rex-form-col-1 div.rex-form-row p.rex-form-text input {
+	width: 48%;
+}
+
+div.rex-form div.rex-area-col-b div.rex-form-row p span.rex-form-notice,
+div#rex-form-system-setup fieldset.rex-form-col-1 div.rex-form-row p input.rex-form-submit {
+	margin-left: 48%;	
+}
+
+div.rex-form .CodeMirror {
+    width: 80% !important;
+    height: 600px !important;
+	
+    clear: both;
+    margin: 0px;
+    padding: 0;
+}
+.rex-form .CodeMirror pre,
+.rex-form .CodeMirror-linenumber {
+  font-size: 11px;
+  line-height: 14px;
+  font-family: 'Droid Sans Mono', sans-serif;
+}
+
+div.rex-form legend {
+    padding: 10px 15px;
+}
+div.rex-form div.rex-form-row p.rex-form-text input, div.rex-form div.rex-form-row p.rex-form-password input.rex-form-password {
+    width: 260px
+}
+/*	Navigationen ***************************************************************
+*******************************************************************************/
+div#rex-navi-main dl {
+	width: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+	/* padding-right: 20px; */
+}
+div#rex-navi-main dt {
+	clear: both;
+	display: block;
+	padding: 20px 20px 14px !important;
+	font-weight: normal;
+}
+div#rex-navi-main dd {
+	margin: 8;
+	padding: 0;
+	width: 200px;
+}
+div#rex-navi-main ul li  {
+	display: block;
+	float: none;
+	padding: 0;
+	background: none;
+}
+div#rex-navi-main ul li a {
+	display: block;
+	padding: 6px 20px;
+	white-space: normal;
+	color: #666;
+	font-weight: normal;
+}
+div#rex-navi-main ul li a:hover {
+	text-decoration: none;
+}
+div#rex-navi-main ul li.rex-active ul {
+  display: block;
+}
+div#rex-navi-main ul li ul li {
+	border-bottom: 0;
+}
+div#rex-navi-main ul li ul li a {
+	padding-left: 40px;
+	font-weight: normal;
+}
+
+
+div#rex-title div.rex-title-row {
+	width: 100%;
+}
+div#rex-title div.rex-title-row-sub {
+	border-top: 1px solid #E6E6E6;
+	/* border-bottom: 1px solid #E6E6E6; */
+	margin-bottom: 10px;
+}
+div#rex-title div.rex-title-row-empty {
+	border-bottom: 0;
+}
+div#rex-title div.rex-title-row-empty p {
+	display: none;
+}
+div#rex-title ul#rex-navi-path {
+	border: 0;
+	padding-left: 0;
+}
+
+
+/*	Toolbar ********************************************************************
+*******************************************************************************/
+div.rex-toolbar-content {
+	border: 0;
+	margin-left: 0;
+}
+
+
+/*	Sprachen, Content (Editiermodus, Metadaten, Anzeigen) **********************
+*******************************************************************************/
+div.rex-content-header-2 {
+}
+div.rex-content-header-2 {
+	margin-left: 0;
+	border-left: 0;
+	border-bottom: 1px solid #fff;
+}
+div.rex-content-header ul {
+	margin-right: 0;
+}
+div.rex-content-header ul.rex-navi-content {
+	margin-right: 0;
+	border: 0;
+}
+
+/*	Paginate *******************************************************************
+*******************************************************************************/
+
+div.rex-navi-paginate ul li {
+	margin-right: 10px;
+}
+div.rex-navi-paginate ul li.rex-navi-paginate-page {
+	margin-right: 0;
+}
+div.rex-navi-paginate ul li.rex-navi-paginate-next {
+	padding-left: 10px;
+}
+div.rex-navi-paginate ul li.rex-navi-paginate-message {
+	padding-top: 3px;
+}
+div.rex-navi-paginate ul li.rex-navi-paginate-prev a, 
+div.rex-navi-paginate ul li.rex-navi-paginate-next a {
+	width: 18px;
+	height: 18px;
+}
+div.rex-navi-paginate ul li.rex-navi-paginate-prev a span, 
+div.rex-navi-paginate ul li.rex-navi-paginate-next a span {
+	display: none;
+}
+div.rex-navi-paginate ul li.rex-navi-paginate-page a span {
+	padding: 3px 10px 2px 10px;
+	font-weight: normal;
+}
+
+
+/*	Slice **********************************************************************
+*******************************************************************************/
+div.rex-navi-slice ul li a {
+	display: block;
+	margin-right: 0px;
+	padding-top: 2px;
+	padding-right: 5px;
+}
+div.rex-content-editmode-module-name h3.rex-hl4 {
+	padding-top: 10px;
+}
+
+div.rex-navi-slice ul li a.rex-slice-move-up, 
+div.rex-navi-slice ul li a.rex-slice-move-down {
+	padding-top: 0px;
+	width: 18px;
+	height: 18px;
+}
+div.rex-navi-slice ul li a.rex-slice-move-up {
+	padding-right: 0px;
+}
+
+/*	Content ********************************************************************
+*******************************************************************************/
+div.rex-content-body-2 {
+	padding: 0;
+}
+
+
+body#rex-page-import-export div.rex-area-col-a, 
+body#rex-page-import-export div.rex-area-col-b, 
+div.rex-addon-col-a, 
+div.rex-addon-col-b {
+	float: none;
+	width: 100%;
+}
+div.rex-message span {
+    font-weight: normal;
+}
+div.rex-content-editmode-slice-output img {
+	max-width: 100%;
+}
+/*	Icons **********************************************************************
+*******************************************************************************/
+.rex-i-element-text {
+	display: inline !important;
+	position: absolute !important;
+	left: -1000px !important;
+	top: -1000px !important;
+	width: 0px !important;
+	height: 0px !important;
+	overflow: hidden !important;
+	background-color: #FFF !important;
+}
+.rex-i-clang, 
+.rex-i-clang-add {
+	width: 21px;
+}
+.rex-i-action,
+.rex-i-action-add,
+.rex-i-addon,
+.rex-i-article,
+.rex-i-article-add,
+.rex-i-article-startpage,
+.rex-i-clang,
+.rex-i-clang-add,
+.rex-i-cronjob,
+.rex-i-cronjob-add,
+.rex-i-list,
+.rex-i-media-add,
+.rex-i-media,
+.rex-i-metainfo,
+.rex-i-metainfo-add,
+.rex-i-module,
+.rex-i-module-add,
+.rex-i-refresh,
+.rex-i-refresh-ani,
+.rex-i-refresh-err,
+.rex-i-slice,
+.rex-i-template,
+.rex-i-template-add,
+.rex-i-togglesettings,
+.rex-i-togglesettings-off,
+.rex-i-toggleview,
+.rex-i-toggleview-off,
+.rex-i-user,
+.rex-i-user-add,
+.rex-i-category,
+.rex-i-mediapool-category,
+.rex-i-category-add,
+.rex-i-mediapool-category-add,
+body#rex-page-structure .rex-online,
+body#rex-page-structure .rex-offline {
+	background-image: url(icon-sprite.png);
+}
+.rex-i-action { 							background-position: -592px -510px; }
+.rex-i-action-add { 						background-position: -394px -348px; }
+.rex-i-addon { 								background-position: -442px -407px; }
+.rex-i-article {							background-position: -195px -292px; }
+.rex-i-article-add {						background-position: -394px -348px; }
+.rex-i-article-startpage {					background-position: -147px -670px; }
+.rex-i-clang {								background-position: -295px -614px; }
+.rex-i-clang-add {							background-position: -394px -348px; }
+.rex-i-cronjob {							background-position: -593px -561px; }
+.rex-i-cronjob-add {						background-position: -394px -348px; }
+//.rex-i-generic {							background-position: -294px -348px; }
+//.rex-i-generic-add {						background-position: -394px -348px; }
+//.rex-i-generic-delete {}
+//.rex-i-generic-close {}
+//.rex-i-generic-open {}
+.rex-i-list {}
+.rex-i-media-add {							background-position: -394px -348px; }
+.rex-i-media {}
+.rex-i-metainfo {							background-position: -294px -348px; }
+.rex-i-metainfo-add {						background-position: -394px -348px; }
+.rex-i-module { 							background-position: -543px -563px; }
+.rex-i-module-add {							background-position: -394px -348px; }
+.rex-i-refresh {}
+.rex-i-refresh-ani {}
+.rex-i-refresh-err {}
+.rex-i-slice {}
+.rex-i-template {							background-position: -592px -233px; }
+.rex-i-template-add {						background-position: -394px -348px; }
+.rex-i-togglesettings {}
+.rex-i-togglesettings-off {}
+.rex-i-toggleview {}
+.rex-i-toggleview-off {}
+.rex-i-user {								background-position: -245px -292px; }
+.rex-i-user-add {							background-position: -394px -348px; }
+.rex-i-category, 
+.rex-i-mediapool-category {					background-position: -295px -233px; }
+.rex-i-category-add, 
+.rex-i-mediapool-category-add {				background-position: -394px -348px; }
+
+
+body#rex-page-addon table.rex-table tr.rex-plugin td.rex-col-b, 
+body#rex-page-credits table.rex-table tr.rex-plugin td.rex-col-a {
+	background-position: 7px 14px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+	.rex-i-action,
+	.rex-i-action-add,
+	.rex-i-addon,
+	.rex-i-article,
+	.rex-i-article-add,
+	.rex-i-article-startpage,
+	.rex-i-clang,
+	.rex-i-clang-add,
+	.rex-i-cronjob,
+	.rex-i-cronjob-add,
+	.rex-i-list,
+	.rex-i-media-add,
+	.rex-i-media,
+	.rex-i-metainfo,
+	.rex-i-metainfo-add,
+	.rex-i-module,
+	.rex-i-module-add,
+	.rex-i-refresh,
+	.rex-i-refresh-ani,
+	.rex-i-refresh-err,
+	.rex-i-slice,
+	.rex-i-template,
+	.rex-i-template-add,
+	.rex-i-togglesettings,
+	.rex-i-togglesettings-off,
+	.rex-i-toggleview,
+	.rex-i-toggleview-off,
+	.rex-i-user,
+	.rex-i-user-add,
+	.rex-i-category,
+	.rex-i-mediapool-category,
+	.rex-i-category-add,
+	.rex-i-mediapool-category-add,
+	body#rex-page-structure .rex-online,
+	body#rex-page-structure .rex-offline {
+		background-image: url(icon-sprite@2x.png);
+		background-size: 1137px 794px;
+	}
+}
+
+div#rex-linkmap ul li a {
+	display: block;
+	margin-bottom: 4px;
+	padding: 4px 0px 4px 35px;
+	width: auto;
+	height: auto;
+	text-indent: 0;
+	background-size: auto;
+	background-position: 0 0;
+}
+
+/*	Table **********************************************************************
+*******************************************************************************/
+
+
+/*	Formulare ******************************************************************
+*******************************************************************************/
+
+#rex-rex_cronjob_phpcode textarea {
+  width: 456px;
+  height: 200px;
+}
+
+div.rex-form div.rex-form-row div.rex-form-checkboxes-wrapper, 
+div.rex-form div.rex-form-row div.rex-form-radios-wrapper, 
+div.rex-form div.rex-form-row p.rex-form-label-right label, 
+div.rex-form div.rex-form-row p.rex-form-read span, 
+div.rex-form div.rex-form-row p.rex-form-text input, 
+div.rex-form div.rex-form-row p.rex-form-password input,  
+div.rex-form div.rex-form-row p textarea {
+    /* background: #fff; 
+    border: #c6c6c6 1px solid;
+    padding: 0px 3px; */
+}
+div.rex-form div.rex-form-row p.rex-form-text input:focus, 
+div.rex-form div.rex-form-row p.rex-form-password input:focus, 
+div.rex-form div.rex-form-row p textarea:focus, 
+input[type="text"]:focus,
+input[type="password"]:focus, 
+input.rex-form-text:focus, 
+div.rex-form div.rex-form-row p textarea:focus {
+	border-color: #7A7A7A;
+}
+p.rex-form-radio label {
+	pading: 0px 10px !important;	
+}
+p.rex-form-label-right label {
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+div.rex-widget {
+    border: none;
+	padding: 0px 5px 0px 0px;
+	padding: 4px;
+	border: 1px solid #BEBEBE;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset, 0 -1px 0 rgba(0, 0, 0, 0.04) inset;
+	border-radius: 1px;
+}
+div.rex-widget p.rex-widget-icons {
+	padding: 5px 0 0 5px;
+}
+div.rex-area-col-2 fieldset.rex-form-col-1 div.rex-form-row p.rex-form-read span {
+    padding: 1px 3px;
+}
+div.rex-form div.rex-form-row select {
+    /* padding-right: 0px !important; */
+    line-height: auto;
+    /* padding: 0px !important; */
+}
+div.rex-form div.rex-form-row select option {
+    padding: 2px 3px;
+}
+div.rex-form div.rex-form-row span.rex-form-read {
+    background: none !important;
+}
+div.rex-content-editmode div.rex-form-content-editmode {
+    background-color: #efefef;
+}
+div#rex-form-content-metamode fieldset.rex-form-col-1 div.rex-form-row div.rex-form-checkboxes-wrapper, 
+div#rex-form-content-metamode fieldset.rex-form-col-1 div.rex-form-row div.rex-form-radios-wrapper, 
+div#rex-form-content-metamode fieldset.rex-form-col-1 div.rex-form-row p.rex-form-label-right label, 
+div#rex-form-content-metamode fieldset.rex-form-col-1 div.rex-form-row p.rex-form-read span,
+div#rex-form-content-metamode fieldset.rex-form-col-1 div.rex-form-row p.rex-form-text input,
+div#rex-form-content-metamode fieldset.rex-form-col-1 div.rex-form-row p.rex-form-select select,
+div#rex-form-content-metamode fieldset.rex-form-col-1 div.rex-form-row p textarea {
+	width: 40%;
+}
+
+/*	Bspl.: div.rex-area-col-2 -> System : Einstellungen */
+div.rex-area-col-2 fieldset.rex-form-col-1 div.rex-form-row div.rex-form-checkboxes-wrapper, 
+div.rex-area-col-2 fieldset.rex-form-col-1 div.rex-form-row div.rex-form-radios-wrapper, 
+div.rex-area-col-2 fieldset.rex-form-col-1 div.rex-form-row p.rex-form-label-right label, 
+div.rex-area-col-2 fieldset.rex-form-col-1 div.rex-form-row p.rex-form-read span, 
+div.rex-area-col-2 fieldset.rex-form-col-1 div.rex-form-row p.rex-form-text input,
+div.rex-area-col-2 fieldset.rex-form-col-1 div.rex-form-row p.rex-form-password input,
+div.rex-area-col-2 fieldset.rex-form-col-1 div.rex-form-row p select,
+div.rex-area-col-2 fieldset.rex-form-col-1 div.rex-form-row p textarea, 
+div.rex-form fieldset.rex-form-col-2 div.rex-form-row div.rex-form-checkboxes-wrapper, 
+div.rex-form fieldset.rex-form-col-2 div.rex-form-row div.rex-form-radios-wrapper, 
+div.rex-form fieldset.rex-form-col-2 div.rex-form-row p.rex-form-label-right label, 
+div.rex-form fieldset.rex-form-col-2 div.rex-form-row p.rex-form-read span, 
+div.rex-form fieldset.rex-form-col-2 div.rex-form-row p.rex-form-text input,
+div.rex-form fieldset.rex-form-col-2 div.rex-form-row p.rex-form-password input,
+div.rex-form fieldset.rex-form-col-2 div.rex-form-row p select,
+div.rex-form fieldset.rex-form-col-2 div.rex-form-row p textarea {
+	width: 50%;
+}
+
+div.rex-form div.rex-form-element-v2 p input.rex-form-submit {
+	margin-left: 0px;
+}
+input#rex-form-field-prior {
+	width: 67%;
+}
+
+/*	Checkbox / Radio */
+
+div.rex-form-row p.rex-form-label-right input.rex-form-radio, 
+div.rex-message p.rex-form-label-right input.rex-form-radio {
+	clear: both;
+	float: left;
+	margin: 0 9px 0 135px;
+}
+/*	Struktur : Metainfo
+*******************************************************************************/
+div#rex-form-structure-category tr.rex-metainfo-cat div.rex-form-checkboxes-wrapper p.rex-form-label-right label, 
+div#rex-form-structure-category tr.rex-metainfo-cat div.rex-form-radios-wrapper p.rex-form-label-right label {
+	width: 282px;
+}
+div#rex-form-structure-category tr.rex-metainfo-cat div.rex-form-checkboxes-wrapper, 
+div#rex-form-structure-category tr.rex-metainfo-cat div.rex-form-radios-wrapper, 
+div#rex-form-structure-category tr.rex-metainfo-cat p.rex-form-label-right label, 
+div#rex-form-structure-category tr.rex-metainfo-cat p.rex-form-read span,
+div#rex-form-structure-category tr.rex-metainfo-cat p.rex-form-text input,
+div#rex-form-structure-category tr.rex-metainfo-cat p textarea {
+	width: 312px;
+}
+div#rex-form-structure-category tr.rex-metainfo-cat p.rex-form-select select {
+	width: 318px;
+}
+
+div.rex-form-setup-step-database div.rex-form-row p.rex-form-label-right label {
+	width: 590px;
+}
+
+div#rex-form-mediapool-detail div.rex-form-row p select.rex-form-select-date {
+	width: 45px;
+}
+div#rex-form-mediapool-detail div.rex-form-row p select.rex-form-select-year {
+	width: 65px;
+}
+
+
+div#rex-form-system-setup .rex-area-col-2 .rex-area-col-a .rex-area-content {
+  padding-right: 30px;
+}
+div#rex-form-system-setup div.rex-widget input {
+  width: 180px;
+  border: 1px solid #c6c6c6;
+}
+
+div.rex-form div.rex-form-row label, 
+div.rex-form div.rex-form-row p.rex-form-label {
+	padding: 5px 0px;	
+	width: 155px;
+}
+p.rex-form-col-b label {
+	margin-right: 5px;
+}
+div#rex-a256-searchbar form select#rex-a256-category-id {
+	width: 180px;
+	margin: 4px 0px;
+}
+/*	Mediapool ******************************************************************
+*******************************************************************************/
+.rex-popupmediapool td p.rex-tx1:last-child {
+  margin-bottom: 0px;
+}
+/*	Widget *********************************************************************
+*******************************************************************************/
+div.rex-widget p.rex-widget-icons {
+	padding-top: 4px;
+}
+div.rex-widget p.rex-widget-icons a {
+	width: 18px;
+	height: 18px;
+}
+
+
+/*	Extras *********************************************************************
+*******************************************************************************/
+div#rex-redaxo-link {
+   	background: url(logo.png) no-repeat center center;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 140px;
+	height: 21px;
+	margin: 14px 20px;
+	z-index: 120;
+   	position: fixed;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	div#rex-redaxo-link { 
+		background: url(logo@2x.png) no-repeat center center;
+		background-size: 140px 21px;
+	}
+}
+
+div#rex-redaxo-link a {
+	display: block;
+	width: 140px;
+	height: 21px;
+	text-indent: -1000em;
+}
+
+h1.be-style-customizer-title {
+    top: 16px !important;
+    left: 200px !important;
+    color: #fff !important;
+    font-size: 15px !Important;
+	z-index: 120 !important;
+    width: auto !important;
+	position: fixed !important;
+	font-weight: 600 !important;
+}
+h1.be-style-customizer-title a, h1.be-style-customizer-title a:visited {
+	color: #fff;
+}
+
+#rex-page-module.be-style-customizer-textarea-big #rex-wrapper textarea,
+#rex-page-template.be-style-customizer-textarea-big #rex-wrapper textarea {
+  margin-left: 0px !important;
+  width: 96% !important;
+  margin-bottom: 20px !important;
+  font-size: 13px !important;
+  line-height: 16px !important;
+  min-height: 400px !important;
+}
+/*	Rundungen ******************************************************************
+*******************************************************************************/
+input[type="text"], input[type="password"], input.rex-form-text, div.rex-form div.rex-form-row p textarea {
+	padding: 4px;
+	border: 1px solid #BEBEBE;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset, 0 -1px 0 rgba(0, 0, 0, 0.04) inset;
+	border-radius: 1px;
+}
+
+body div.rex-form, 
+body table.rex-table, 
+body#rex-page-linkmap div#rex-linkmap, 
+body#rex-page-import-export div.rex-area-col-a, 
+body#rex-page-import-export div.rex-area-col-b, 
+#rex-mediapool-detail-wrapper, 
+div.rex-area, 
+div.rex-addon-output, 
+div.rex-content-header, 
+div.rex-content-body,
+div.rex-info-block, 
+div.rex-message, 
+div.rex-message-block, 
+div.rex-toolbar, 
+div.rex-content-block, 
+div.rex-form input.rex-form-submit, 
+input.submit,
+p.rex-button a {
+	border: 0;
+	position: relative;
+}
+
+body div.rex-form table.rex-table, 
+body div.rex-table div.rex-form,
+body div.rex-area div.rex-form, 
+body div.rex-area table.rex-table, 
+body div.rex-content-header div.rex-form,
+body div.rex-content-header table.rex-table, 
+body div.rex-content-body div.rex-form,
+body div.rex-content-body table.rex-table, 
+body div.rex-toolbar div.rex-form, 
+body div.rex-toolbar table.rex-table,  
+body div.rex-content-block div.rex-form, 
+body div.rex-content-block table.rex-table,  
+body div.rex-addon-output div.rex-form,  
+body div.rex-addon-output table.rex-table, 
+body #rex-mediapool-detail-wrapper div.rex-form  {
+	border: 0;
+	-moz-outline-radius-bottomleft: 0;
+	-moz-outline-radius-bottomright: 0;
+	-moz-outline-radius-topleft: 0;
+	-moz-outline-radius-topright: 0;
+	outline: 0;
+}
+div.rex-content-body {
+	-moz-outline-radius-topleft: 0;
+	-moz-outline-radius-topright: 0;
+}
+div.rex-content-header, 
+div.rex-content-body {
+	-moz-outline-radius-bottomleft: 0;
+	-moz-outline-radius-bottomright: 0;
+}
+
+body div#rex-form-content-metamode, 
+body div.rex-form-content-editmode-add-slice, 
+body div.rex-form-content-editmode-edit-slice {
+	outline: 0;
+}
+
+p.rex-button a, 
+input.submit,
+input.rex-form-submit {
+	padding: 5px 10px;
+	border-radius: 2px;
+	
+}
+input[type="file"] {
+	padding: 6px 0px;
+}
+
+div.rex-area-col-2, 
+div.rex-addon-col-2 {
+	position: static;
+	/* overflow: hidden; */
+}
+body#rex-page-import-export div.rex-area-col-a, 
+div.rex-addon-output, 
+div#rex-form-mediapool-selectcategory {
+	margin-bottom: 10px;
+}
+div.rex-area-col-a, 
+div.rex-area-col-b, 
+div.rex-addon-col-a, 
+div.rex-addon-col-b {
+    float: left;
+    width: 48%;
+    padding: 1%;
+}
+
+/*	Popup Spezial **************************************************************
+*******************************************************************************/
+body.rex-popup {
+    background: #fff;
+}
+body.rex-popup div#rex-navi-logout,
+body.rex-popup div#rex-footer {
+	display: none;
+}
+body.rex-popup div#rex-wrapper {
+	margin-top: 0px !important;
+}
+body.rex-popup #rex-navi-main,
+body.rex-popup #rex-extra {
+	display: none;
+}
+
+/*	Elemente wieder anzeigen ***************************************************
+*******************************************************************************/
+div#rex-navi-main dl dt {
+	display: block !important;
+	position: static !important;
+	width: 160px !important;
+	height: auto !important;
+	background-color: transparent !important;
+}
+
+/*	Elemente verstecken ********************************************************
+		Hinweis: 
+			den Elementen nicht die Klasse "rex-hidden" einzeln zuweisen, 
+			da diese von anderen Layouts eventuell dargestellt werden sollen
+*******************************************************************************/
+div#rex-header {
+	display: inline !important;
+	position: absolute !important;
+	left: -1000px !important;
+	top: -1000px !important;
+	width: 0px !important;
+	height: 0px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	background-color: #FFF !important;
+	overflow: hidden !important;
+}
+
+
+/* liquid Layout */
+body div#rex-website {
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+}
+body div#rex-navi-logout {
+  float: none;
+  position: fixed;
+  z-index: 120;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.22);
+}
+
+body div#rex-wrapper {
+  /* float: left; */
+  left: 0px;
+  /* margin-right: 16px; */
+  width: auto;
+  margin-top: 50px;
+  /* bottom: 0px; */
+  /* margin-bottom: 20px; */
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  padding-bottom: 35px;
+  overflow: hidden;
+}
+body.rex-layout-liquid div#rex-wrapper2 {
+  width: 100%;
+  float: left;
+  /* overflow: hidden; */
+}
+body.rex-layout-liquid div#rex-wrapper:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0px;
+}
+
+body#rex-page-login div#rex-wrapper,
+body#rex-page-linkmap div#rex-wrapper,
+body#rex-page-mediapool div#rex-wrapper,
+body#rex-page-setup div#rex-wrapper {
+  margin-left: 0;
+}
+body.rex-popup div#rex-wrapper2 {
+  width: auto;
+  float: none;
+}
+
+body#rex-page-mediapool div#rex-wrapper {
+    padding: 2%;
+    width: 96%;
+}
+
+
+
+tr.rex-metainfo-cat {
+	display: none;
+}
+tr.rex-metainfo-cat td .rex-form-row {
+	padding: 5px 0;
+}
+
+div.rex-content-editmode-module-name,
+div.rex-content-editmode-module-name div.rex-navi-slice {
+	background-color: #EEE;
+}
+
+div.rex-content-editmode {
+	background-color: #F8F8F8;
+}
+
+.rex-code, 
+div.rex-content-body, 
+table.rex-table caption, 
+table.rex-table tr.rex-plugin td {
+	background-color: #Fbfbfb;
+}
+
+#xform-modul fieldset {
+	background: none !important;
+	padding: 0px !important;
+}
+/*
+body div#rex-footer,
+body div#rex-website,
+html body#rex-page-structure,
+html body#rex-page-content{ background:url(none) #f3f3f3; }
+body div#rex-navi-main{ float:right }
+body div#rex-navi-logout ul.rex-logout li{ background:#333; padding:10px; }
+body div#rex-website div#rex-footer,
+body div#rex-website div#rex-navi-footer ul{ background:#333; padding:0px; margin:0px; }
+*/
+
+
+
+/* ------------------------------------------------------------------ */
+/* Font size fix (maybe just a Firefox/Ubuntu issue)                  */
+/* ------------------------------------------------------------------ */
+div#rex-navi-main dt {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+div#rex-footer {
+  /* padding: 1% 0 2% 0; */
+  /* width: 100%; */
+  background: #fff;
+ 
+  font-size: 11px;
+  /* font-style: italic; */
+  position: absolute;
+  bottom: 0px;
+  left: 200px;
+  height: 3%;
+}
+div#rex-navi-footer ul {
+    float: left;
+	
+    /* margin-left: 215px; */
+	width: auto;
+}
+body#rex-page-login div#rex-navi-footer {
+	text-align: center;
+}
+body#rex-page-login div#rex-navi-footer ul {
+	float: none;
+	/* display: inline-block; */
+	margin-left: 0px;
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+body#rex-page-login div#rex-navi-footer p#rex-scripttime {
+    margin-right: 0px;
+	float: none;
+}
+
+.rex-code {
+  font-size: 12px;
+  line-height: 17px;
+}
+table.rex-table caption,
+table.rex-table th,
+table.rex-table td {
+	line-height: 18px;	
+}
+table.rex-table-mrgn td:nth-child(4) {
+	text-align: center;
+}
+table.rex-table th.rex-icon,
+table.rex-table td.rex-icon {
+	padding-top: 8px;	
+}
+select {
+	overflow: scroll !important;
+}
+#rex-xform p .cke { /* xform */
+    display: inline-block !important;
+	float: left !important;
+    width: 50% !important;
+}
+div.rex-form .CodeMirror.CodeMirror-fullscreen {
+	width: 100% !important;
+	height: 100% !important;
+}
